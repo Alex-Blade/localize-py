@@ -1,4 +1,4 @@
-# localize_py
+# localize-py
 ```
 >>> _ = Translator('eng')
 >>> _('about', why='Because it's simple')
@@ -8,7 +8,7 @@
 ```
 # Installation
 ```
-pip install localize_py
+pip install localize-py
 ```
 # Be Aware
 This module abuses f-strings, thus there are several requirements:
@@ -23,6 +23,7 @@ This module abuses f-strings, thus there are several requirements:
 You will see examples of escaping below.
 # HowTo
 -- How do I create them?
+
 -- JSON files with dictionary for each language, not more, not less. 
 ```
 # /eng_file.json
@@ -37,6 +38,7 @@ You will see examples of escaping below.
 }
 ```
 -- How do I use them?
+
 -- Well, not much harder than create. Let's consider an imaginary web application:
 ```
 from localize_py import Translator
@@ -54,6 +56,7 @@ It's better to load translation files on start of application, that's why it's `
 When you need to translate text finally, simply initialize an instance of `Translator` with correct shortname, and then even simplier - call it as a function and provide a tag (key) for target string.
 
 -- Now what does that `{username}` thing mean?
+
 -- You can subsitute variables from your code to the translation by passing them as key arguments to `__call__`, right after string tag.
 ```
 # /eng_file.json

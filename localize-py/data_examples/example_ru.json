@@ -1,0 +1,6 @@
+{
+  "Button1": "Назад",
+  "Button2": "Старт",
+  "TextBox1": "Добро пожаловать, {username}!\\n",
+  "RuPlural": "доступно {amount} {['акция', 'акции', 'акций'][self.ru_plural(amount)]}:\\n"
+}
